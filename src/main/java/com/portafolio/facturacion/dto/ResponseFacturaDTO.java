@@ -1,0 +1,15 @@
+package com.portafolio.facturacion.dto;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Set;
+
+public class ResponseFacturaDTO {
+
+    private Integer id;
+    private String numeroFactura;
+    private BigDecimal subTotal;
+    private BigDecimal total;
+    private LocalDateTime fechaCreado;
+    private Set<ResponseDetalleFacturaDTO> detalleFacturas;
+}
