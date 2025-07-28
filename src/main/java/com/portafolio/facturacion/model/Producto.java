@@ -9,7 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name="productos")
@@ -26,8 +26,9 @@ public class Producto {
     private String detalle;
     private BigDecimal precio;
 
+    @Column(updatable = false) //refuerzo de que la fecha de creado no se pueda modificar NUNCA
     @CreationTimestamp //automaticamente se va a llenar con esta notacion ( la fecha)
-    private LocalDate fechaCreado;
+    private LocalDateTime fechaCreado;
     @UpdateTimestamp  //Se utiliza para guardar automáticamente la fecha y hora de la última modificación del registro
-    private LocalDate fechaActualizacion;
+    private LocalDateTime fechaActualizacion;
 }
