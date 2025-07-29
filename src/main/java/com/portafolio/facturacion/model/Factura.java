@@ -36,6 +36,6 @@ public class Factura {
     //relacion con la tabla detalleFacturas (1 a muchos):
     //set para que no se puedan repetir productos en una factura
 
-    @OneToMany(cascade = CascadeType.ALL , mappedBy = "factura", orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL ,mappedBy = "factura", orphanRemoval = true)
     private Set<DetalleFactura> detalleFacturas;
 }

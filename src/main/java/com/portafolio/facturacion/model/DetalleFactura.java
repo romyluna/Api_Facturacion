@@ -30,7 +30,9 @@ public class DetalleFactura {
     @CreationTimestamp
     private LocalDateTime fechaCreado;
 
-    //para relacionar detalleFactura con factura
+    //para relacionar detalleFactura con factura : JPA asume que la clave foranea es de la tabla factura el id por eso en la tabla
+    //detalles se genera la columna factura_id y se vincula con la tabla factura por medio del id (FOREING KEY)
+    //si yo queria ponerle otro nombre a esa columna: @JoinColumn(referencedColumnName = "nombre_columna"
     @ManyToOne
     @JsonIgnore
     private Factura factura;
