@@ -3,6 +3,7 @@ package com.portafolio.facturacion.controller;
 
 import com.portafolio.facturacion.dto.ProductoDTO;
 import com.portafolio.facturacion.service.ProductoService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/V1/productos")
+@Slf4j //para logs
 public class ProductoController {
 
     private final ProductoService productoService;
@@ -21,6 +23,8 @@ public class ProductoController {
 
     @PostMapping
     public ResponseEntity<ProductoDTO> save(@RequestBody ProductoDTO productoDTO){
+        //probando para el log slf4j
+        log.info("informacion productoDTO {}",productoDTO); //mostraria por consola esta info.
         return new ResponseEntity<>(productoService.save(productoDTO), HttpStatus.CREATED);
     }
 
