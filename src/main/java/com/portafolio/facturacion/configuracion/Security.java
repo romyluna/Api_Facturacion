@@ -16,7 +16,10 @@ public class Security {
         ).authorizeHttpRequests(
                 auth->{
                     //todas las uris que comiencen con esta ruta /api/V1/productos no necesitan autorizacion de acceso
-                    auth.requestMatchers("/api/V1/productos/**").permitAll()
+                    auth.requestMatchers("/api/V1/productos/**","/swagger-ui/**","/swagger-ui.html",
+                                    "/v3/api-docs/**",
+                                    "/swagger-resources/**",
+                                    "/webjars/**").permitAll()
                             .anyRequest().authenticated();//el resto tiene que estar autenticado
                     //auth.anyRequest().authenticated(); // todas las rutas o endpoints de la aplicación requieren que el usuario esté autenticado.
                 }
