@@ -11,15 +11,15 @@
 ## Funcionalidades
 
 - Autenticación para proteger los endpoints de factura-controller
-- Gestión de facturas (crear, leer, actualizar, eliminar).
+- Gestión de facturas 
 - Gestión de detalles de factura asociados a cada factura.
 - Documentación de la API generada con Swagger UI para facilitar la prueba y consulta de los endpoints.
 
 ## Cálculo de totales en la factura:
 </br>
 Esta API de facturación realiza automáticamente el cálculo de los montos totales de cada factura para garantizar la precisión y consistencia en la información.
-
-Total: Es la suma de los importes de todos los productos incluidos en el detalle de la factura.
+</br>
+Subtotal: Es la suma de los importes de todos los productos incluidos en el detalle de la factura.
 
 IVA: Se aplica un impuesto al valor agregado (IVA) sobre el total, calculado según la tasa vigente del 21%
 
@@ -32,7 +32,7 @@ Estos cálculos se realizan automáticamente en el backend al momento de crear u
 ---
 ### Datos iniciales en la base (`custom-data.sql`)
 
-El archivo `custom-data.sql`, ubicado en la carpeta `resources`, contiene sentencias SQL para insertar datos iniciales en la base de datos (modo prueba) ## LO DEJE INACTIVO PORQUE FUE DE PRUEBA ##
+El archivo `custom-data.sql`, ubicado en la carpeta `resources`, contiene sentencias SQL para insertar datos iniciales en la base de datos ## LO DEJE INACTIVO PORQUE FUE DE PRUEBA ##
 
 **Importante:** Si este archivo se ejecuta automáticamente cada vez que se inicia la aplicación, las sentencias `INSERT` se ejecutarán en cada arranque, lo que puede provocar:
 
