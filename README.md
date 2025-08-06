@@ -4,8 +4,6 @@
 
 🔧 Proyecto backend desarrollado en Java utilizando Spring Boot. Permite gestionar operaciones de facturación y está documentado con Swagger para facilitar las pruebas de los endpoints.
 </br>
-🔧Esta es una API sencilla para la gestión de facturación, desarrollada con Java Spring Boot. 
-</br>
 🔧La API incluye funcionalidades para manejar facturas y sus detalles, además de contar con autenticación para asegurar el acceso.
 
 ---
