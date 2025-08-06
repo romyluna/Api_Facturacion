@@ -98,7 +98,7 @@ Este endpoint **no requiere autenticación**, por lo tanto puede probarse direct
 ### Ejemplo de GET: Obtener Facturas (Este endpoint **requiere autenticación**)
 
 > 🛡️ Todos los endpoints relacionados a **facturación** requieren autenticación.  
-> Esto incluye: listar facturas, crear, editar y eliminar.
+> Esto incluye: listar facturas, crear, y eliminar.
 
   json
 {
