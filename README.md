@@ -131,6 +131,10 @@ Para usarla:
 
 Esto permite realizar pruebas rápidas sin necesidad de configurar manualmente cada endpoint.
 
+adjunto un ejemplo de como se podria probar tambien en postman:
+
+![postman](https://github.com/romyluna/Api_Facturacion/blob/master/screenshot/postman.png?raw=true)
+
 ---
 
 ### 👩‍💻 Contacto
